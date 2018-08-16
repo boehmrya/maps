@@ -2,7 +2,7 @@
 
 import json
 
-filename = 'us-states.json'
+filename = 'dotMapData_v4.json'
 
 with open(filename, 'r') as handle:
     parsed = json.load(handle)

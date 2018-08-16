@@ -1,0 +1,231 @@
+{
+            "geometry": {
+                "coordinates": [
+                    -87.481554,
+                    43.01766
+                ],
+                "type": "Point"
+            },
+            "id": "fd84e8743c28a363d0dc22535f16d2d7",
+            "properties": {
+                "GEOID": 33340,
+                "NAME": "Milwaukee-Waukesha-West Allis, WI Metro Area",
+                "category": "capitalized",
+                "state": "WI",
+                "state0": "WI"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -112.359059,
+                    39.872067
+                ],
+                "type": "Point"
+            },
+            "id": "fda71c887c9260a73145f47d99c2c0c3",
+            "properties": {
+                "GEOID": 39340,
+                "NAME": "Provo-Orem, UT Metro Area",
+                "category": "capitalized",
+                "state": "UT",
+                "state0": "UT"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -76.709877,
+                    40.851524
+                ],
+                "type": "Point"
+            },
+            "id": "fe0b72640856a1a8cb44728919ba6ade",
+            "properties": {
+                "GEOID": 44980,
+                "NAME": "Sunbury, PA Micro Area",
+                "category": "investment",
+                "state": "PA",
+                "state0": "PA"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -78.310636,
+                    40.497922
+                ],
+                "type": "Point"
+            },
+            "id": "fe554780ead1d1cdf6bae9f27f001a54",
+            "properties": {
+                "GEOID": 11020,
+                "NAME": "Altoona, PA Metro Area",
+                "category": "opportunity",
+                "state": "PA",
+                "state0": "PA"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -81.724217,
+                    41.760392
+                ],
+                "type": "Point"
+            },
+            "id": "fec8eb431fe3211176226e4b3d3ac838",
+            "properties": {
+                "GEOID": 17460,
+                "NAME": "Cleveland-Elyria, OH Metro Area",
+                "category": "capitalized",
+                "state": "OH",
+                "state0": "OH"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -79.400573,
+                    36.043954
+                ],
+                "type": "Point"
+            },
+            "id": "fee37ec862ccde4c7d3a4fa9cb7914b3",
+            "properties": {
+                "GEOID": 15500,
+                "NAME": "Burlington, NC Metro Area",
+                "category": "opportunity",
+                "state": "NC",
+                "state0": "NC"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -101.689453125,
+                    24.647017162630366
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 25900,
+                "NAME": "Hilo, HI",
+                "category": "investment",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "HI",
+                "state0": "HI"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -103.0078125,
+                    26.07652055985697
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 27980,
+                "NAME": "Kahului-Wailuku-Lahaina, HI",
+                "category": "capitalized",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "HI",
+                "state0": "HI"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -104.6337890625,
+                    26.82407078047018
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 46520,
+                "NAME": "Urban Honolulu, HI",
+                "category": "capitalized",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "HI",
+                "state0": "HI"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -106.34765625,
+                    27.449790329784214
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 28180,
+                "NAME": "Kapaa, HI",
+                "category": "investment",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "HI",
+                "state0": "HI"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -111.4453125,
+                    27.916766641249065
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 21820,
+                "NAME": "Fairbanks, AK",
+                "category": "growth",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "AK",
+                "state0": "AK"
+            },
+            "type": "Feature"
+        },
+        {
+            "geometry": {
+                "coordinates": [
+                    -111.533203125,
+                    26.194876675795218
+                ],
+                "type": "Point"
+            },
+            "properties": {
+                "GEOID": 11260,
+                "NAME": "Anchorage, AK",
+                "category": "capitalized",
+                "marker-color": "#7e7e7e",
+                "marker-size": "medium",
+                "marker-symbol": "",
+                "state": "AK",
+                "state0": "AK"
+            },
+            "type": "Feature"
+        }
+    ],
+    "type": "FeatureCollection"
+}
