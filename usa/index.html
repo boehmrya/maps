@@ -39,6 +39,830 @@ body {
 </style>
 </head>
 <body>
+
+<section id="interactive-map">
+  <div class="header-block">
+      <h1>Our Connected Country</h1>
+      <h2>Learn more about the positive impact broadband internet creates in American communities</h2>
+  </div>
+  <div class="map-container">
+      <div id="map">
+      </div>
+      <img id="mobile-map" src="dist/mobile-map.png">
+      <div class="right-column">
+          <p class="map-description">
+              <strong>There are 511 Metropolitan and Micropolitan Statistical Areas across the U.S. with a population of 288+ million citizens and 100+ million households.</strong> This map provides both Access and Subscription rates for all of them.
+          </p>
+          <div id="search-dropdown"><a href="#"><span>Select a State</span> <span class="arrow-down"></span></a>
+              <div class="dropdowns" style="display: none;">
+                  <ul id="states">
+                                                      <li><a href="#AL">Alabama</a></li>
+                                                      <li><a href="#AK">Alaska</a></li>
+                                                      <li><a href="#AZ">Arizona</a></li>
+                                                      <li><a href="#AR">Arkansas</a></li>
+                                                      <li><a href="#CA">California</a></li>
+                                                      <li><a href="#CO">Colorado</a></li>
+                                                      <li><a href="#CT">Connecticut</a></li>
+                                                      <li><a href="#DE">Delaware</a></li>
+                                                      <li><a href="#DC">District of Columbia</a></li>
+                                                      <li><a href="#FL">Florida</a></li>
+                                                      <li><a href="#GA">Georgia</a></li>
+                                                      <li><a href="#HI">Hawaii</a></li>
+                                                      <li><a href="#ID">Idaho</a></li>
+                                                      <li><a href="#IL">Illinois</a></li>
+                                                      <li><a href="#IN">Indiana</a></li>
+                                                      <li><a href="#IA">Iowa</a></li>
+                                                      <li><a href="#KS">Kansas</a></li>
+                                                      <li><a href="#KY">Kentucky</a></li>
+                                                      <li><a href="#LA">Louisiana</a></li>
+                                                      <li><a href="#ME">Maine</a></li>
+                                                      <li><a href="#MD">Maryland</a></li>
+                                                      <li><a href="#MA">Massachusetts</a></li>
+                                                      <li><a href="#MI">Michigan</a></li>
+                                                      <li><a href="#MN">Minnesota</a></li>
+                                                      <li><a href="#MS">Mississippi</a></li>
+                                                      <li><a href="#MO">Missouri</a></li>
+                                                      <li><a href="#MT">Montana</a></li>
+                                                      <li><a href="#NE">Nebraska</a></li>
+                                                      <li><a href="#NV">Nevada</a></li>
+                                                      <li><a href="#NH">New Hampshire</a></li>
+                                                      <li><a href="#NJ">New Jersey</a></li>
+                                                      <li><a href="#NM">New Mexico</a></li>
+                                                      <li><a href="#NY">New York</a></li>
+                                                      <li><a href="#NC">North Carolina</a></li>
+                                                      <li><a href="#ND">North Dakota</a></li>
+                                                      <li><a href="#OH">Ohio</a></li>
+                                                      <li><a href="#OK">Oklahoma</a></li>
+                                                      <li><a href="#OR">Oregon</a></li>
+                                                      <li><a href="#PA">Pennsylvania</a></li>
+                                                      <li><a href="#RI">Rhode Island</a></li>
+                                                      <li><a href="#SC">South Carolina</a></li>
+                                                      <li><a href="#SD">South Dakota</a></li>
+                                                      <li><a href="#TN">Tennessee</a></li>
+                                                      <li><a href="#TX">Texas</a></li>
+                                                      <li><a href="#UT">Utah</a></li>
+                                                      <li><a href="#VT">Vermont</a></li>
+                                                      <li><a href="#VA">Virginia</a></li>
+                                                      <li><a href="#WA">Washington</a></li>
+                                                      <li><a href="#WV">West Virginia</a></li>
+                                                      <li><a href="#WI">Wisconsin</a></li>
+                                                      <li><a href="#WY">Wyoming</a></li>
+                                              </ul>
+
+                                                  <ul id="state-AL" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10700" data-index="67">Albertville, AL </a></li>
+                                                                      <li><a href="#11500" data-index="20">Anniston-Oxford-Jacksonville, AL </a></li>
+                                                                      <li><a href="#12220" data-index="326">Auburn-Opelika, AL </a></li>
+                                                                      <li><a href="#13820" data-index="497">Birmingham-Hoover, AL </a></li>
+                                                                      <li><a href="#17980" data-index="98">Columbus, GA-AL </a></li>
+                                                                      <li><a href="#18980" data-index="173">Cullman, AL </a></li>
+                                                                      <li><a href="#19300" data-index="347">Daphne-Fairhope-Foley, AL </a></li>
+                                                                      <li><a href="#19460" data-index="149">Decatur, AL </a></li>
+                                                                      <li><a href="#20020" data-index="172">Dothan, AL </a></li>
+                                                                      <li><a href="#22520" data-index="104">Florence-Muscle Shoals, AL </a></li>
+                                                                      <li><a href="#22840" data-index="250">Fort Payne, AL </a></li>
+                                                                      <li><a href="#23460" data-index="62">Gadsden, AL </a></li>
+                                                                      <li><a href="#26620" data-index="411">Huntsville, AL </a></li>
+                                                                      <li><a href="#33660" data-index="96">Mobile, AL </a></li>
+                                                                      <li><a href="#33860" data-index="107">Montgomery, AL </a></li>
+                                                                      <li><a href="#45180" data-index="363">Talladega-Sylacauga, AL </a></li>
+                                                                      <li><a href="#46220" data-index="316">Tuscaloosa, AL </a></li>
+                                                              </ul>
+                                                      <ul id="state-AK" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#11260" data-index="510">Anchorage, AK</a></li>
+                                                                      <li><a href="#21820" data-index="509">Fairbanks, AK</a></li>
+                                                              </ul>
+                                                      <ul id="state-AZ" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#22380" data-index="49">Flagstaff, AZ </a></li>
+                                                                      <li><a href="#29420" data-index="280">Lake Havasu City-Kingman, AZ </a></li>
+                                                                      <li><a href="#38060" data-index="9">Phoenix-Mesa-Scottsdale, AZ </a></li>
+                                                                      <li><a href="#39140" data-index="301">Prescott, AZ </a></li>
+                                                                      <li><a href="#43320" data-index="161">Show Low, AZ </a></li>
+                                                                      <li><a href="#43420" data-index="105">Sierra Vista-Douglas, AZ </a></li>
+                                                                      <li><a href="#46060" data-index="170">Tucson, AZ </a></li>
+                                                                      <li><a href="#49740" data-index="160">Yuma, AZ </a></li>
+                                                              </ul>
+                                                      <ul id="state-AR" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#22220" data-index="28">Fayetteville-Springdale-Rogers, AR-MO </a></li>
+                                                                      <li><a href="#22900" data-index="437">Fort Smith, AR-OK </a></li>
+                                                                      <li><a href="#26300" data-index="34">Hot Springs, AR </a></li>
+                                                                      <li><a href="#27860" data-index="334">Jonesboro, AR </a></li>
+                                                                      <li><a href="#30780" data-index="45">Little Rock-North Little Rock-Conway, AR </a></li>
+                                                                      <li><a href="#32820" data-index="214">Memphis, TN-MS-AR </a></li>
+                                                                      <li><a href="#38220" data-index="383">Pine Bluff, AR </a></li>
+                                                                      <li><a href="#40780" data-index="118">Russellville, AR </a></li>
+                                                                      <li><a href="#42620" data-index="443">Searcy, AR </a></li>
+                                                                      <li><a href="#45500" data-index="447">Texarkana, TX-AR </a></li>
+                                                              </ul>
+                                                      <ul id="state-CA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#12540" data-index="439">Bakersfield, CA </a></li>
+                                                                      <li><a href="#17020" data-index="31">Chico, CA </a></li>
+                                                                      <li><a href="#17340" data-index="63">Clearlake, CA </a></li>
+                                                                      <li><a href="#20940" data-index="465">El Centro, CA </a></li>
+                                                                      <li><a href="#21700" data-index="365">Eureka-Arcata-Fortuna, CA </a></li>
+                                                                      <li><a href="#23420" data-index="51">Fresno, CA </a></li>
+                                                                      <li><a href="#25260" data-index="251">Hanford-Corcoran, CA </a></li>
+                                                                      <li><a href="#31080" data-index="453">Los Angeles-Long Beach-Anaheim, CA </a></li>
+                                                                      <li><a href="#31460" data-index="277">Madera, CA </a></li>
+                                                                      <li><a href="#32900" data-index="202">Merced, CA </a></li>
+                                                                      <li><a href="#33700" data-index="190">Modesto, CA </a></li>
+                                                                      <li><a href="#34900" data-index="468">Napa, CA </a></li>
+                                                                      <li><a href="#37100" data-index="140">Oxnard-Thousand Oaks-Ventura, CA </a></li>
+                                                                      <li><a href="#39820" data-index="201">Redding, CA </a></li>
+                                                                      <li><a href="#40140" data-index="21">Riverside-San Bernardino-Ontario, CA </a></li>
+                                                                      <li><a href="#40900" data-index="157">Sacramento--Roseville--Arden-Arcade, CA </a></li>
+                                                                      <li><a href="#41500" data-index="271">Salinas, CA </a></li>
+                                                                      <li><a href="#41740" data-index="373">San Diego-Carlsbad, CA </a></li>
+                                                                      <li><a href="#41860" data-index="194">San Francisco-Oakland-Hayward, CA </a></li>
+                                                                      <li><a href="#41940" data-index="345">San Jose-Sunnyvale-Santa Clara, CA </a></li>
+                                                                      <li><a href="#42020" data-index="434">San Luis Obispo-Paso Robles-Arroyo Grande, CA </a></li>
+                                                                      <li><a href="#42100" data-index="263">Santa Cruz-Watsonville, CA </a></li>
+                                                                      <li><a href="#42200" data-index="312">Santa Maria-Santa Barbara, CA </a></li>
+                                                                      <li><a href="#42220" data-index="273">Santa Rosa, CA </a></li>
+                                                                      <li><a href="#44700" data-index="336">Stockton-Lodi, CA </a></li>
+                                                                      <li><a href="#46020" data-index="282">Truckee-Grass Valley, CA </a></li>
+                                                                      <li><a href="#46380" data-index="444">Ukiah, CA </a></li>
+                                                                      <li><a href="#46700" data-index="386">Vallejo-Fairfield, CA </a></li>
+                                                                      <li><a href="#47300" data-index="298">Visalia-Porterville, CA </a></li>
+                                                                      <li><a href="#49700" data-index="178">Yuba City, CA </a></li>
+                                                              </ul>
+                                                      <ul id="state-CO" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14500" data-index="108">Boulder, CO </a></li>
+                                                                      <li><a href="#17820" data-index="129">Colorado Springs, CO </a></li>
+                                                                      <li><a href="#19740" data-index="208">Denver-Aurora-Lakewood, CO </a></li>
+                                                                      <li><a href="#22660" data-index="459">Fort Collins, CO </a></li>
+                                                                      <li><a href="#24060" data-index="303">Glenwood Springs, CO </a></li>
+                                                                      <li><a href="#24300" data-index="281">Grand Junction, CO </a></li>
+                                                                      <li><a href="#24540" data-index="261">Greeley, CO </a></li>
+                                                                      <li><a href="#39380" data-index="171">Pueblo, CO </a></li>
+                                                              </ul>
+                                                      <ul id="state-CT" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14860" data-index="431">Bridgeport-Stamford-Norwalk, CT </a></li>
+                                                                      <li><a href="#25540" data-index="340">Hartford-West Hartford-East Hartford, CT </a></li>
+                                                                      <li><a href="#35300" data-index="41">New Haven-Milford, CT </a></li>
+                                                                      <li><a href="#35980" data-index="169">Norwich-New London, CT </a></li>
+                                                                      <li><a href="#45860" data-index="32">Torrington, CT </a></li>
+                                                                      <li><a href="#49340" data-index="450">Worcester, MA-CT </a></li>
+                                                              </ul>
+                                                      <ul id="state-DE" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#20100" data-index="243">Dover, DE </a></li>
+                                                                      <li><a href="#37980" data-index="154">Philadelphia-Camden-Wilmington, PA-NJ-DE-MD </a></li>
+                                                                      <li><a href="#41540" data-index="380">Salisbury, MD-DE </a></li>
+                                                              </ul>
+                                                      <ul id="state-DC" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#47900" data-index="93">Washington-Arlington-Alexandria, DC-VA-MD-WV </a></li>
+                                                              </ul>
+                                                      <ul id="state-FL" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#15980" data-index="481">Cape Coral-Fort Myers, FL </a></li>
+                                                                      <li><a href="#18880" data-index="307">Crestview-Fort Walton Beach-Destin, FL </a></li>
+                                                                      <li><a href="#19660" data-index="494">Deltona-Daytona Beach-Ormond Beach, FL </a></li>
+                                                                      <li><a href="#23540" data-index="322">Gainesville, FL </a></li>
+                                                                      <li><a href="#26140" data-index="215">Homosassa Springs, FL </a></li>
+                                                                      <li><a href="#27260" data-index="122">Jacksonville, FL </a></li>
+                                                                      <li><a href="#28580" data-index="376">Key West, FL </a></li>
+                                                                      <li><a href="#29380" data-index="429">Lake City, FL </a></li>
+                                                                      <li><a href="#29460" data-index="483">Lakeland-Winter Haven, FL </a></li>
+                                                                      <li><a href="#33100" data-index="317">Miami-Fort Lauderdale-West Palm Beach, FL </a></li>
+                                                                      <li><a href="#34940" data-index="23">Naples-Immokalee-Marco Island, FL </a></li>
+                                                                      <li><a href="#35840" data-index="342">North Port-Sarasota-Bradenton, FL </a></li>
+                                                                      <li><a href="#36100" data-index="385">Ocala, FL </a></li>
+                                                                      <li><a href="#36740" data-index="269">Orlando-Kissimmee-Sanford, FL </a></li>
+                                                                      <li><a href="#37260" data-index="131">Palatka, FL </a></li>
+                                                                      <li><a href="#37340" data-index="221">Palm Bay-Melbourne-Titusville, FL </a></li>
+                                                                      <li><a href="#37460" data-index="300">Panama City, FL </a></li>
+                                                                      <li><a href="#37860" data-index="323">Pensacola-Ferry Pass-Brent, FL </a></li>
+                                                                      <li><a href="#38940" data-index="115">Port St. Lucie, FL </a></li>
+                                                                      <li><a href="#39460" data-index="57">Punta Gorda, FL </a></li>
+                                                                      <li><a href="#42680" data-index="244">Sebastian-Vero Beach, FL </a></li>
+                                                                      <li><a href="#42700" data-index="54">Sebring, FL </a></li>
+                                                                      <li><a href="#45220" data-index="186">Tallahassee, FL </a></li>
+                                                                      <li><a href="#45300" data-index="285">Tampa-St. Petersburg-Clearwater, FL </a></li>
+                                                                      <li><a href="#45540" data-index="337">The Villages, FL </a></li>
+                                                              </ul>
+                                                      <ul id="state-GA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10500" data-index="475">Albany, GA </a></li>
+                                                                      <li><a href="#12020" data-index="420">Athens-Clarke County, GA </a></li>
+                                                                      <li><a href="#12060" data-index="488">Atlanta-Sandy Springs-Roswell, GA </a></li>
+                                                                      <li><a href="#12260" data-index="125">Augusta-Richmond County, GA-SC </a></li>
+                                                                      <li><a href="#15260" data-index="441">Brunswick, GA </a></li>
+                                                                      <li><a href="#16860" data-index="472">Chattanooga, TN-GA </a></li>
+                                                                      <li><a href="#17980" data-index="98">Columbus, GA-AL </a></li>
+                                                                      <li><a href="#19140" data-index="496">Dalton, GA </a></li>
+                                                                      <li><a href="#23580" data-index="142">Gainesville, GA </a></li>
+                                                                      <li><a href="#25980" data-index="362">Hinesville, GA </a></li>
+                                                                      <li><a href="#29300" data-index="48">LaGrange, GA </a></li>
+                                                                      <li><a href="#31420" data-index="73">Macon-Bibb County, GA </a></li>
+                                                                      <li><a href="#40660" data-index="240">Rome, GA </a></li>
+                                                                      <li><a href="#42340" data-index="402">Savannah, GA </a></li>
+                                                                      <li><a href="#44340" data-index="146">Statesboro, GA </a></li>
+                                                                      <li><a href="#46660" data-index="275">Valdosta, GA </a></li>
+                                                                      <li><a href="#47580" data-index="461">Warner Robins, GA </a></li>
+                                                              </ul>
+                                                      <ul id="state-HI" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#25900" data-index="505">Hilo, HI</a></li>
+                                                                      <li><a href="#27980" data-index="506">Kahului-Wailuku-Lahaina, HI</a></li>
+                                                                      <li><a href="#28180" data-index="508">Kapaa, HI</a></li>
+                                                                      <li><a href="#46520" data-index="507">Urban Honolulu, HI</a></li>
+                                                              </ul>
+                                                      <ul id="state-ID" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14260" data-index="339">Boise City, ID </a></li>
+                                                                      <li><a href="#17660" data-index="304">Coeur d'Alene, ID </a></li>
+                                                                      <li><a href="#26820" data-index="351">Idaho Falls, ID </a></li>
+                                                                      <li><a href="#30300" data-index="432">Lewiston, ID-WA </a></li>
+                                                                      <li><a href="#30860" data-index="134">Logan, UT-ID </a></li>
+                                                                      <li><a href="#38540" data-index="241">Pocatello, ID </a></li>
+                                                                      <li><a href="#46300" data-index="265">Twin Falls, ID </a></li>
+                                                              </ul>
+                                                      <ul id="state-IL" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14010" data-index="16">Bloomington, IL </a></li>
+                                                                      <li><a href="#16020" data-index="158">Cape Girardeau, MO-IL </a></li>
+                                                                      <li><a href="#16060" data-index="482">Carbondale-Marion, IL </a></li>
+                                                                      <li><a href="#16580" data-index="473">Champaign-Urbana, IL </a></li>
+                                                                      <li><a href="#16660" data-index="58">Charleston-Mattoon, IL </a></li>
+                                                                      <li><a href="#16980" data-index="86">Chicago-Naperville-Elgin, IL-IN-WI </a></li>
+                                                                      <li><a href="#19180" data-index="176">Danville, IL </a></li>
+                                                                      <li><a href="#19340" data-index="364">Davenport-Moline-Rock Island, IA-IL </a></li>
+                                                                      <li><a href="#19500" data-index="226">Decatur, IL </a></li>
+                                                                      <li><a href="#28100" data-index="192">Kankakee, IL </a></li>
+                                                                      <li><a href="#36860" data-index="330">Ottawa-Peru, IL </a></li>
+                                                                      <li><a href="#37140" data-index="333">Paducah, KY-IL </a></li>
+                                                                      <li><a href="#37900" data-index="193">Peoria, IL </a></li>
+                                                                      <li><a href="#39500" data-index="315">Quincy, IL-MO </a></li>
+                                                                      <li><a href="#40420" data-index="237">Rockford, IL </a></li>
+                                                                      <li><a href="#44100" data-index="156">Springfield, IL </a></li>
+                                                                      <li><a href="#41180" data-index="218">St. Louis, MO-IL </a></li>
+                                                              </ul>
+                                                      <ul id="state-IN" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14020" data-index="255">Bloomington, IN </a></li>
+                                                                      <li><a href="#16980" data-index="86">Chicago-Naperville-Elgin, IL-IN-WI </a></li>
+                                                                      <li><a href="#17140" data-index="103">Cincinnati, OH-KY-IN </a></li>
+                                                                      <li><a href="#18020" data-index="286">Columbus, IN </a></li>
+                                                                      <li><a href="#21140" data-index="294">Elkhart-Goshen, IN </a></li>
+                                                                      <li><a href="#21780" data-index="457">Evansville, IN-KY </a></li>
+                                                                      <li><a href="#23060" data-index="116">Fort Wayne, IN </a></li>
+                                                                      <li><a href="#26900" data-index="314">Indianapolis-Carmel-Anderson, IN </a></li>
+                                                                      <li><a href="#29020" data-index="95">Kokomo, IN </a></li>
+                                                                      <li><a href="#29200" data-index="492">Lafayette-West Lafayette, IN </a></li>
+                                                                      <li><a href="#31140" data-index="174">Louisville/Jefferson County, KY-IN </a></li>
+                                                                      <li><a href="#31980" data-index="231">Marion, IN </a></li>
+                                                                      <li><a href="#33140" data-index="159">Michigan City-La Porte, IN </a></li>
+                                                                      <li><a href="#34620" data-index="381">Muncie, IN </a></li>
+                                                                      <li><a href="#39980" data-index="236">Richmond, IN </a></li>
+                                                                      <li><a href="#43780" data-index="486">South Bend-Mishawaka, IN-MI </a></li>
+                                                                      <li><a href="#45460" data-index="164">Terre Haute, IN </a></li>
+                                                                      <li><a href="#47700" data-index="404">Warsaw, IN </a></li>
+                                                              </ul>
+                                                      <ul id="state-IA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#11180" data-index="378">Ames, IA </a></li>
+                                                                      <li><a href="#16300" data-index="249">Cedar Rapids, IA </a></li>
+                                                                      <li><a href="#19340" data-index="364">Davenport-Moline-Rock Island, IA-IL </a></li>
+                                                                      <li><a href="#19780" data-index="448">Des Moines-West Des Moines, IA </a></li>
+                                                                      <li><a href="#20220" data-index="60">Dubuque, IA </a></li>
+                                                                      <li><a href="#26980" data-index="88">Iowa City, IA </a></li>
+                                                                      <li><a href="#36540" data-index="452">Omaha-Council Bluffs, NE-IA </a></li>
+                                                                      <li><a href="#43580" data-index="180">Sioux City, IA-NE-SD </a></li>
+                                                                      <li><a href="#47940" data-index="372">Waterloo-Cedar Falls, IA </a></li>
+                                                              </ul>
+                                                      <ul id="state-KS" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#26740" data-index="39">Hutchinson, KS </a></li>
+                                                                      <li><a href="#28140" data-index="350">Kansas City, MO-KS </a></li>
+                                                                      <li><a href="#29940" data-index="79">Lawrence, KS </a></li>
+                                                                      <li><a href="#31740" data-index="83">Manhattan, KS </a></li>
+                                                                      <li><a href="#41140" data-index="425">St. Joseph, MO-KS </a></li>
+                                                                      <li><a href="#45820" data-index="211">Topeka, KS </a></li>
+                                                                      <li><a href="#48620" data-index="4">Wichita, KS </a></li>
+                                                              </ul>
+                                                      <ul id="state-KY" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14540" data-index="14">Bowling Green, KY </a></li>
+                                                                      <li><a href="#17140" data-index="103">Cincinnati, OH-KY-IN </a></li>
+                                                                      <li><a href="#17300" data-index="50">Clarksville, TN-KY </a></li>
+                                                                      <li><a href="#21060" data-index="117">Elizabethtown-Fort Knox, KY </a></li>
+                                                                      <li><a href="#21780" data-index="457">Evansville, IN-KY </a></li>
+                                                                      <li><a href="#23180" data-index="399">Frankfort, KY </a></li>
+                                                                      <li><a href="#26580" data-index="188">Huntington-Ashland, WV-KY-OH </a></li>
+                                                                      <li><a href="#30460" data-index="2">Lexington-Fayette, KY </a></li>
+                                                                      <li><a href="#30940" data-index="258">London, KY </a></li>
+                                                                      <li><a href="#31140" data-index="174">Louisville/Jefferson County, KY-IN </a></li>
+                                                                      <li><a href="#36980" data-index="139">Owensboro, KY </a></li>
+                                                                      <li><a href="#37140" data-index="333">Paducah, KY-IL </a></li>
+                                                                      <li><a href="#40080" data-index="264">Richmond-Berea, KY </a></li>
+                                                              </ul>
+                                                      <ul id="state-LA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10780" data-index="3">Alexandria, LA </a></li>
+                                                                      <li><a href="#12940" data-index="148">Baton Rouge, LA </a></li>
+                                                                      <li><a href="#25220" data-index="451">Hammond, LA </a></li>
+                                                                      <li><a href="#26380" data-index="377">Houma-Thibodaux, LA </a></li>
+                                                                      <li><a href="#29180" data-index="248">Lafayette, LA </a></li>
+                                                                      <li><a href="#29340" data-index="52">Lake Charles, LA </a></li>
+                                                                      <li><a href="#33740" data-index="446">Monroe, LA </a></li>
+                                                                      <li><a href="#35380" data-index="358">New Orleans-Metairie, LA </a></li>
+                                                                      <li><a href="#36660" data-index="82">Opelousas, LA </a></li>
+                                                                      <li><a href="#43340" data-index="370">Shreveport-Bossier City, LA </a></li>
+                                                              </ul>
+                                                      <ul id="state-ME" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#12300" data-index="197">Augusta-Waterville, ME </a></li>
+                                                                      <li><a href="#12620" data-index="195">Bangor, ME </a></li>
+                                                                      <li><a href="#30340" data-index="407">Lewiston-Auburn, ME </a></li>
+                                                                      <li><a href="#38860" data-index="80">Portland-South Portland, ME </a></li>
+                                                              </ul>
+                                                      <ul id="state-MD" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#12580" data-index="25">Baltimore-Columbia-Towson, MD </a></li>
+                                                                      <li><a href="#15680" data-index="59">California-Lexington Park, MD </a></li>
+                                                                      <li><a href="#19060" data-index="224">Cumberland, MD-WV </a></li>
+                                                                      <li><a href="#25180" data-index="55">Hagerstown-Martinsburg, MD-WV </a></li>
+                                                                      <li><a href="#37980" data-index="154">Philadelphia-Camden-Wilmington, PA-NJ-DE-MD </a></li>
+                                                                      <li><a href="#41540" data-index="380">Salisbury, MD-DE </a></li>
+                                                                      <li><a href="#47900" data-index="93">Washington-Arlington-Alexandria, DC-VA-MD-WV </a></li>
+                                                              </ul>
+                                                      <ul id="state-MA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#12700" data-index="227">Barnstable Town, MA </a></li>
+                                                                      <li><a href="#14460" data-index="92">Boston-Cambridge-Newton, MA-NH </a></li>
+                                                                      <li><a href="#24640" data-index="113">Greenfield Town, MA </a></li>
+                                                                      <li><a href="#38340" data-index="371">Pittsfield, MA </a></li>
+                                                                      <li><a href="#39300" data-index="419">Providence-Warwick, RI-MA </a></li>
+                                                                      <li><a href="#44140" data-index="254">Springfield, MA </a></li>
+                                                                      <li><a href="#49340" data-index="450">Worcester, MA-CT </a></li>
+                                                              </ul>
+                                                      <ul id="state-MI" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10300" data-index="17">Adrian, MI </a></li>
+                                                                      <li><a href="#11460" data-index="352">Ann Arbor, MI </a></li>
+                                                                      <li><a href="#12980" data-index="343">Battle Creek, MI </a></li>
+                                                                      <li><a href="#13020" data-index="423">Bay City, MI </a></li>
+                                                                      <li><a href="#19820" data-index="296">Detroit-Warren-Dearborn, MI </a></li>
+                                                                      <li><a href="#22420" data-index="493">Flint, MI </a></li>
+                                                                      <li><a href="#24340" data-index="97">Grand Rapids-Wyoming, MI </a></li>
+                                                                      <li><a href="#26090" data-index="299">Holland, MI </a></li>
+                                                                      <li><a href="#27100" data-index="130">Jackson, MI </a></li>
+                                                                      <li><a href="#28020" data-index="421">Kalamazoo-Portage, MI </a></li>
+                                                                      <li><a href="#29620" data-index="85">Lansing-East Lansing, MI </a></li>
+                                                                      <li><a href="#31940" data-index="1">Marinette, WI-MI </a></li>
+                                                                      <li><a href="#32100" data-index="138">Marquette, MI </a></li>
+                                                                      <li><a href="#33220" data-index="44">Midland, MI </a></li>
+                                                                      <li><a href="#33780" data-index="184">Monroe, MI </a></li>
+                                                                      <li><a href="#34380" data-index="182">Mount Pleasant, MI </a></li>
+                                                                      <li><a href="#34740" data-index="207">Muskegon, MI </a></li>
+                                                                      <li><a href="#35660" data-index="114">Niles-Benton Harbor, MI </a></li>
+                                                                      <li><a href="#37020" data-index="15">Owosso, MI </a></li>
+                                                                      <li><a href="#40980" data-index="368">Saginaw, MI </a></li>
+                                                                      <li><a href="#43780" data-index="486">South Bend-Mishawaka, IN-MI </a></li>
+                                                                      <li><a href="#45900" data-index="487">Traverse City, MI </a></li>
+                                                              </ul>
+                                                      <ul id="state-MN" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14660" data-index="69">Brainerd, MN </a></li>
+                                                                      <li><a href="#20260" data-index="137">Duluth, MN-WI </a></li>
+                                                                      <li><a href="#22020" data-index="181">Fargo, ND-MN </a></li>
+                                                                      <li><a href="#22060" data-index="135">Faribault-Northfield, MN </a></li>
+                                                                      <li><a href="#24220" data-index="40">Grand Forks, ND-MN </a></li>
+                                                                      <li><a href="#29100" data-index="127">La Crosse-Onalaska, WI-MN </a></li>
+                                                                      <li><a href="#31860" data-index="233">Mankato-North Mankato, MN </a></li>
+                                                                      <li><a href="#33460" data-index="119">Minneapolis-St. Paul-Bloomington, MN-WI </a></li>
+                                                                      <li><a href="#40340" data-index="395">Rochester, MN </a></li>
+                                                                      <li><a href="#41060" data-index="463">St. Cloud, MN </a></li>
+                                                              </ul>
+                                                      <ul id="state-MS" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#25060" data-index="177">Gulfport-Biloxi-Pascagoula, MS </a></li>
+                                                                      <li><a href="#25620" data-index="416">Hattiesburg, MS </a></li>
+                                                                      <li><a href="#27140" data-index="71">Jackson, MS </a></li>
+                                                                      <li><a href="#29860" data-index="413">Laurel, MS </a></li>
+                                                                      <li><a href="#32820" data-index="214">Memphis, TN-MS-AR </a></li>
+                                                                      <li><a href="#32940" data-index="449">Meridian, MS </a></li>
+                                                                      <li><a href="#46180" data-index="259">Tupelo, MS </a></li>
+                                                              </ul>
+                                                      <ul id="state-MO" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14700" data-index="276">Branson, MO </a></li>
+                                                                      <li><a href="#16020" data-index="158">Cape Girardeau, MO-IL </a></li>
+                                                                      <li><a href="#17860" data-index="87">Columbia, MO </a></li>
+                                                                      <li><a href="#22100" data-index="266">Farmington, MO </a></li>
+                                                                      <li><a href="#22220" data-index="28">Fayetteville-Springdale-Rogers, AR-MO </a></li>
+                                                                      <li><a href="#27620" data-index="84">Jefferson City, MO </a></li>
+                                                                      <li><a href="#27900" data-index="292">Joplin, MO </a></li>
+                                                                      <li><a href="#28140" data-index="350">Kansas City, MO-KS </a></li>
+                                                                      <li><a href="#39500" data-index="315">Quincy, IL-MO </a></li>
+                                                                      <li><a href="#44180" data-index="390">Springfield, MO </a></li>
+                                                                      <li><a href="#41140" data-index="425">St. Joseph, MO-KS </a></li>
+                                                                      <li><a href="#41180" data-index="218">St. Louis, MO-IL </a></li>
+                                                              </ul>
+                                                      <ul id="state-MT" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#13740" data-index="477">Billings, MT </a></li>
+                                                                      <li><a href="#14580" data-index="313">Bozeman, MT </a></li>
+                                                                      <li><a href="#24500" data-index="128">Great Falls, MT </a></li>
+                                                                      <li><a href="#25740" data-index="462">Helena, MT </a></li>
+                                                                      <li><a href="#28060" data-index="232">Kalispell, MT </a></li>
+                                                                      <li><a href="#33540" data-index="455">Missoula, MT </a></li>
+                                                              </ul>
+                                                      <ul id="state-NE" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#24260" data-index="331">Grand Island, NE </a></li>
+                                                                      <li><a href="#30700" data-index="479">Lincoln, NE </a></li>
+                                                                      <li><a href="#36540" data-index="452">Omaha-Council Bluffs, NE-IA </a></li>
+                                                                      <li><a href="#43580" data-index="180">Sioux City, IA-NE-SD </a></li>
+                                                              </ul>
+                                                      <ul id="state-NV" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#16180" data-index="225">Carson City, NV </a></li>
+                                                                      <li><a href="#29820" data-index="210">Las Vegas-Henderson-Paradise, NV </a></li>
+                                                                      <li><a href="#39900" data-index="198">Reno, NV </a></li>
+                                                              </ul>
+                                                      <ul id="state-NH" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#14460" data-index="92">Boston-Cambridge-Newton, MA-NH </a></li>
+                                                                      <li><a href="#17200" data-index="379">Claremont-Lebanon, NH-VT </a></li>
+                                                                      <li><a href="#18180" data-index="398">Concord, NH </a></li>
+                                                                      <li><a href="#28300" data-index="53">Keene, NH </a></li>
+                                                                      <li><a href="#31700" data-index="64">Manchester-Nashua, NH </a></li>
+                                                              </ul>
+                                                      <ul id="state-NJ" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10900" data-index="262">Allentown-Bethlehem-Easton, PA-NJ </a></li>
+                                                                      <li><a href="#12100" data-index="36">Atlantic City-Hammonton, NJ </a></li>
+                                                                      <li><a href="#35620" data-index="187">New York-Newark-Jersey City, NY-NJ-PA </a></li>
+                                                                      <li><a href="#36140" data-index="338">Ocean City, NJ </a></li>
+                                                                      <li><a href="#37980" data-index="154">Philadelphia-Camden-Wilmington, PA-NJ-DE-MD </a></li>
+                                                                      <li><a href="#45940" data-index="389">Trenton, NJ </a></li>
+                                                                      <li><a href="#47220" data-index="460">Vineland-Bridgeton, NJ </a></li>
+                                                              </ul>
+                                                      <ul id="state-NM" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10460" data-index="445">Alamogordo, NM </a></li>
+                                                                      <li><a href="#10740" data-index="387">Albuquerque, NM </a></li>
+                                                                      <li><a href="#22140" data-index="200">Farmington, NM </a></li>
+                                                                      <li><a href="#23700" data-index="42">Gallup, NM </a></li>
+                                                                      <li><a href="#26020" data-index="442">Hobbs, NM </a></li>
+                                                                      <li><a href="#29740" data-index="257">Las Cruces, NM </a></li>
+                                                                      <li><a href="#40740" data-index="480">Roswell, NM </a></li>
+                                                                      <li><a href="#42140" data-index="100">Santa Fe, NM </a></li>
+                                                              </ul>
+                                                      <ul id="state-NY" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10580" data-index="81">Albany-Schenectady-Troy, NY </a></li>
+                                                                      <li><a href="#12180" data-index="235">Auburn, NY </a></li>
+                                                                      <li><a href="#13780" data-index="126">Binghamton, NY </a></li>
+                                                                      <li><a href="#15380" data-index="46">Buffalo-Cheektowaga-Niagara Falls, NY </a></li>
+                                                                      <li><a href="#18500" data-index="153">Corning, NY </a></li>
+                                                                      <li><a href="#21300" data-index="229">Elmira, NY </a></li>
+                                                                      <li><a href="#24020" data-index="490">Glens Falls, NY </a></li>
+                                                                      <li><a href="#27060" data-index="151">Ithaca, NY </a></li>
+                                                                      <li><a href="#27460" data-index="388">Jamestown-Dunkirk-Fredonia, NY </a></li>
+                                                                      <li><a href="#28740" data-index="278">Kingston, NY </a></li>
+                                                                      <li><a href="#35620" data-index="187">New York-Newark-Jersey City, NY-NJ-PA </a></li>
+                                                                      <li><a href="#36300" data-index="415">Ogdensburg-Massena, NY </a></li>
+                                                                      <li><a href="#36460" data-index="410">Olean, NY </a></li>
+                                                                      <li><a href="#38460" data-index="417">Plattsburgh, NY </a></li>
+                                                                      <li><a href="#40380" data-index="228">Rochester, NY </a></li>
+                                                                      <li><a href="#45060" data-index="354">Syracuse, NY </a></li>
+                                                                      <li><a href="#46540" data-index="204">Utica-Rome, NY </a></li>
+                                                                      <li><a href="#48060" data-index="392">Watertown-Fort Drum, NY </a></li>
+                                                              </ul>
+                                                      <ul id="state-NC" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#11700" data-index="165">Asheville, NC </a></li>
+                                                                      <li><a href="#15500" data-index="504">Burlington, NC </a></li>
+                                                                      <li><a href="#16740" data-index="112">Charlotte-Concord-Gastonia, NC-SC </a></li>
+                                                                      <li><a href="#20380" data-index="175">Dunn, NC </a></li>
+                                                                      <li><a href="#20500" data-index="397">Durham-Chapel Hill, NC </a></li>
+                                                                      <li><a href="#21020" data-index="212">Elizabeth City, NC </a></li>
+                                                                      <li><a href="#22180" data-index="99">Fayetteville, NC </a></li>
+                                                                      <li><a href="#22580" data-index="305">Forest City, NC </a></li>
+                                                                      <li><a href="#24140" data-index="408">Goldsboro, NC </a></li>
+                                                                      <li><a href="#24660" data-index="361">Greensboro-High Point, NC </a></li>
+                                                                      <li><a href="#24780" data-index="464">Greenville, NC </a></li>
+                                                                      <li><a href="#25860" data-index="141">Hickory-Lenoir-Morganton, NC </a></li>
+                                                                      <li><a href="#27340" data-index="6">Jacksonville, NC </a></li>
+                                                                      <li><a href="#31300" data-index="10">Lumberton, NC </a></li>
+                                                                      <li><a href="#33980" data-index="253">Morehead City, NC </a></li>
+                                                                      <li><a href="#34340" data-index="24">Mount Airy, NC </a></li>
+                                                                      <li><a href="#34820" data-index="206">Myrtle Beach-Conway-North Myrtle Beach, SC-NC </a></li>
+                                                                      <li><a href="#35100" data-index="433">New Bern, NC </a></li>
+                                                                      <li><a href="#35900" data-index="238">North Wilkesboro, NC </a></li>
+                                                                      <li><a href="#38240" data-index="403">Pinehurst-Southern Pines, NC </a></li>
+                                                                      <li><a href="#39580" data-index="252">Raleigh, NC </a></li>
+                                                                      <li><a href="#40260" data-index="272">Roanoke Rapids, NC </a></li>
+                                                                      <li><a href="#40580" data-index="458">Rocky Mount, NC </a></li>
+                                                                      <li><a href="#43140" data-index="356">Shelby, NC </a></li>
+                                                                      <li><a href="#47260" data-index="409">Virginia Beach-Norfolk-Newport News, VA-NC </a></li>
+                                                                      <li><a href="#48900" data-index="293">Wilmington, NC </a></li>
+                                                                      <li><a href="#48980" data-index="230">Wilson, NC </a></li>
+                                                                      <li><a href="#49180" data-index="124">Winston-Salem, NC </a></li>
+                                                              </ul>
+                                                      <ul id="state-ND" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#13900" data-index="489">Bismarck, ND </a></li>
+                                                                      <li><a href="#22020" data-index="181">Fargo, ND-MN </a></li>
+                                                                      <li><a href="#24220" data-index="40">Grand Forks, ND-MN </a></li>
+                                                                      <li><a href="#33500" data-index="5">Minot, ND </a></li>
+                                                              </ul>
+                                                      <ul id="state-OH" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10420" data-index="283">Akron, OH </a></li>
+                                                                      <li><a href="#11780" data-index="19">Ashtabula, OH </a></li>
+                                                                      <li><a href="#11900" data-index="191">Athens, OH </a></li>
+                                                                      <li><a href="#15940" data-index="424">Canton-Massillon, OH </a></li>
+                                                                      <li><a href="#17060" data-index="223">Chillicothe, OH </a></li>
+                                                                      <li><a href="#17140" data-index="103">Cincinnati, OH-KY-IN </a></li>
+                                                                      <li><a href="#17460" data-index="503">Cleveland-Elyria, OH </a></li>
+                                                                      <li><a href="#18140" data-index="374">Columbus, OH </a></li>
+                                                                      <li><a href="#19380" data-index="234">Dayton, OH </a></li>
+                                                                      <li><a href="#22300" data-index="484">Findlay, OH </a></li>
+                                                                      <li><a href="#26580" data-index="188">Huntington-Ashland, WV-KY-OH </a></li>
+                                                                      <li><a href="#30620" data-index="375">Lima, OH </a></li>
+                                                                      <li><a href="#31900" data-index="274">Mansfield, OH </a></li>
+                                                                      <li><a href="#32020" data-index="22">Marion, OH </a></li>
+                                                                      <li><a href="#35420" data-index="68">New Philadelphia-Dover, OH </a></li>
+                                                                      <li><a href="#39020" data-index="422">Portsmouth, OH </a></li>
+                                                                      <li><a href="#41400" data-index="37">Salem, OH </a></li>
+                                                                      <li><a href="#41780" data-index="29">Sandusky, OH </a></li>
+                                                                      <li><a href="#44220" data-index="102">Springfield, OH </a></li>
+                                                                      <li><a href="#45780" data-index="7">Toledo, OH </a></li>
+                                                                      <li><a href="#48260" data-index="341">Weirton-Steubenville, WV-OH </a></li>
+                                                                      <li><a href="#48540" data-index="242">Wheeling, WV-OH </a></li>
+                                                                      <li><a href="#49300" data-index="268">Wooster, OH </a></li>
+                                                                      <li><a href="#49660" data-index="369">Youngstown-Warren-Boardman, OH-PA </a></li>
+                                                                      <li><a href="#49780" data-index="30">Zanesville, OH </a></li>
+                                                              </ul>
+                                                      <ul id="state-OK" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#21420" data-index="65">Enid, OK </a></li>
+                                                                      <li><a href="#22900" data-index="437">Fort Smith, AR-OK </a></li>
+                                                                      <li><a href="#30020" data-index="147">Lawton, OK </a></li>
+                                                                      <li><a href="#34780" data-index="66">Muskogee, OK </a></li>
+                                                                      <li><a href="#36420" data-index="61">Oklahoma City, OK </a></li>
+                                                                      <li><a href="#43060" data-index="382">Shawnee, OK </a></li>
+                                                                      <li><a href="#44660" data-index="302">Stillwater, OK </a></li>
+                                                                      <li><a href="#46140" data-index="132">Tulsa, OK </a></li>
+                                                              </ul>
+                                                      <ul id="state-OR" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10540" data-index="222">Albany, OR </a></li>
+                                                                      <li><a href="#13460" data-index="26">Bend-Redmond, OR </a></li>
+                                                                      <li><a href="#18300" data-index="78">Coos Bay, OR </a></li>
+                                                                      <li><a href="#18700" data-index="485">Corvallis, OR </a></li>
+                                                                      <li><a href="#21660" data-index="144">Eugene, OR </a></li>
+                                                                      <li><a href="#24420" data-index="309">Grants Pass, OR </a></li>
+                                                                      <li><a href="#25840" data-index="27">Hermiston-Pendleton, OR </a></li>
+                                                                      <li><a href="#28900" data-index="426">Klamath Falls, OR </a></li>
+                                                                      <li><a href="#32780" data-index="360">Medford, OR </a></li>
+                                                                      <li><a href="#38900" data-index="428">Portland-Vancouver-Hillsboro, OR-WA </a></li>
+                                                                      <li><a href="#40700" data-index="495">Roseburg, OR </a></li>
+                                                                      <li><a href="#41420" data-index="401">Salem, OR </a></li>
+                                                              </ul>
+                                                      <ul id="state-PA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10900" data-index="262">Allentown-Bethlehem-Easton, PA-NJ </a></li>
+                                                                      <li><a href="#11020" data-index="502">Altoona, PA </a></li>
+                                                                      <li><a href="#14100" data-index="183">Bloomsburg-Berwick, PA </a></li>
+                                                                      <li><a href="#16540" data-index="396">Chambersburg-Waynesboro, PA </a></li>
+                                                                      <li><a href="#20180" data-index="163">DuBois, PA </a></li>
+                                                                      <li><a href="#20700" data-index="162">East Stroudsburg, PA </a></li>
+                                                                      <li><a href="#21500" data-index="318">Erie, PA </a></li>
+                                                                      <li><a href="#23900" data-index="359">Gettysburg, PA </a></li>
+                                                                      <li><a href="#25420" data-index="469">Harrisburg-Carlisle, PA </a></li>
+                                                                      <li><a href="#26860" data-index="106">Indiana, PA </a></li>
+                                                                      <li><a href="#27780" data-index="320">Johnstown, PA </a></li>
+                                                                      <li><a href="#29540" data-index="179">Lancaster, PA </a></li>
+                                                                      <li><a href="#30140" data-index="13">Lebanon, PA </a></li>
+                                                                      <li><a href="#32740" data-index="109">Meadville, PA </a></li>
+                                                                      <li><a href="#35260" data-index="155">New Castle, PA </a></li>
+                                                                      <li><a href="#35620" data-index="187">New York-Newark-Jersey City, NY-NJ-PA </a></li>
+                                                                      <li><a href="#37980" data-index="154">Philadelphia-Camden-Wilmington, PA-NJ-DE-MD </a></li>
+                                                                      <li><a href="#38300" data-index="346">Pittsburgh, PA </a></li>
+                                                                      <li><a href="#39060" data-index="246">Pottsville, PA </a></li>
+                                                                      <li><a href="#39740" data-index="219">Reading, PA </a></li>
+                                                                      <li><a href="#42540" data-index="288">Scranton--Wilkes-Barre--Hazleton, PA </a></li>
+                                                                      <li><a href="#43740" data-index="189">Somerset, PA </a></li>
+                                                                      <li><a href="#44300" data-index="76">State College, PA </a></li>
+                                                                      <li><a href="#44980" data-index="501">Sunbury, PA </a></li>
+                                                                      <li><a href="#48700" data-index="427">Williamsport, PA </a></li>
+                                                                      <li><a href="#49620" data-index="454">York-Hanover, PA </a></li>
+                                                                      <li><a href="#49660" data-index="369">Youngstown-Warren-Boardman, OH-PA </a></li>
+                                                              </ul>
+                                                      <ul id="state-RI" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#39300" data-index="419">Providence-Warwick, RI-MA </a></li>
+                                                              </ul>
+                                                      <ul id="state-SC" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#12260" data-index="125">Augusta-Richmond County, GA-SC </a></li>
+                                                                      <li><a href="#16700" data-index="267">Charleston-North Charleston, SC </a></li>
+                                                                      <li><a href="#16740" data-index="112">Charlotte-Concord-Gastonia, NC-SC </a></li>
+                                                                      <li><a href="#17900" data-index="291">Columbia, SC </a></li>
+                                                                      <li><a href="#22500" data-index="287">Florence, SC </a></li>
+                                                                      <li><a href="#24860" data-index="478">Greenville-Anderson-Mauldin, SC </a></li>
+                                                                      <li><a href="#24940" data-index="213">Greenwood, SC </a></li>
+                                                                      <li><a href="#25940" data-index="498">Hilton Head Island-Bluffton-Beaufort, SC </a></li>
+                                                                      <li><a href="#34820" data-index="206">Myrtle Beach-Conway-North Myrtle Beach, SC-NC </a></li>
+                                                                      <li><a href="#36700" data-index="143">Orangeburg, SC </a></li>
+                                                                      <li><a href="#42860" data-index="297">Seneca, SC </a></li>
+                                                                      <li><a href="#43900" data-index="414">Spartanburg, SC </a></li>
+                                                                      <li><a href="#44940" data-index="185">Sumter, SC </a></li>
+                                                              </ul>
+                                                      <ul id="state-SD" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#39660" data-index="332">Rapid City, SD </a></li>
+                                                                      <li><a href="#43580" data-index="180">Sioux City, IA-NE-SD </a></li>
+                                                                      <li><a href="#43620" data-index="438">Sioux Falls, SD </a></li>
+                                                              </ul>
+                                                      <ul id="state-TN" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#16860" data-index="472">Chattanooga, TN-GA </a></li>
+                                                                      <li><a href="#17300" data-index="50">Clarksville, TN-KY </a></li>
+                                                                      <li><a href="#17420" data-index="11">Cleveland, TN </a></li>
+                                                                      <li><a href="#18260" data-index="8">Cookeville, TN </a></li>
+                                                                      <li><a href="#24620" data-index="77">Greeneville, TN </a></li>
+                                                                      <li><a href="#27180" data-index="47">Jackson, TN </a></li>
+                                                                      <li><a href="#27740" data-index="400">Johnson City, TN </a></li>
+                                                                      <li><a href="#28700" data-index="94">Kingsport-Bristol-Bristol, TN-VA </a></li>
+                                                                      <li><a href="#28940" data-index="289">Knoxville, TN </a></li>
+                                                                      <li><a href="#32820" data-index="214">Memphis, TN-MS-AR </a></li>
+                                                                      <li><a href="#34100" data-index="245">Morristown, TN </a></li>
+                                                                      <li><a href="#34980" data-index="467">Nashville-Davidson--Murfreesboro--Franklin, TN </a></li>
+                                                                      <li><a href="#42940" data-index="440">Sevierville, TN </a></li>
+                                                                      <li><a href="#46100" data-index="196">Tullahoma-Manchester, TN </a></li>
+                                                              </ul>
+                                                      <ul id="state-TX" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10180" data-index="72">Abilene, TX </a></li>
+                                                                      <li><a href="#11100" data-index="412">Amarillo, TX </a></li>
+                                                                      <li><a href="#11980" data-index="319">Athens, TX </a></li>
+                                                                      <li><a href="#12420" data-index="35">Austin-Round Rock, TX </a></li>
+                                                                      <li><a href="#13140" data-index="466">Beaumont-Port Arthur, TX </a></li>
+                                                                      <li><a href="#15180" data-index="203">Brownsville-Harlingen, TX </a></li>
+                                                                      <li><a href="#17780" data-index="152">College Station-Bryan, TX </a></li>
+                                                                      <li><a href="#18580" data-index="12">Corpus Christi, TX </a></li>
+                                                                      <li><a href="#19100" data-index="394">Dallas-Fort Worth-Arlington, TX </a></li>
+                                                                      <li><a href="#21340" data-index="70">El Paso, TX </a></li>
+                                                                      <li><a href="#26420" data-index="335">Houston-The Woodlands-Sugar Land, TX </a></li>
+                                                                      <li><a href="#26660" data-index="133">Huntsville, TX </a></li>
+                                                                      <li><a href="#28660" data-index="348">Killeen-Temple, TX </a></li>
+                                                                      <li><a href="#29700" data-index="136">Laredo, TX </a></li>
+                                                                      <li><a href="#30980" data-index="0">Longview, TX </a></li>
+                                                                      <li><a href="#31180" data-index="38">Lubbock, TX </a></li>
+                                                                      <li><a href="#31260" data-index="166">Lufkin, TX </a></li>
+                                                                      <li><a href="#32220" data-index="471">Marshall, TX </a></li>
+                                                                      <li><a href="#32580" data-index="43">McAllen-Edinburg-Mission, TX </a></li>
+                                                                      <li><a href="#33260" data-index="74">Midland, TX </a></li>
+                                                                      <li><a href="#34860" data-index="430">Nacogdoches, TX </a></li>
+                                                                      <li><a href="#36220" data-index="247">Odessa, TX </a></li>
+                                                                      <li><a href="#41660" data-index="435">San Angelo, TX </a></li>
+                                                                      <li><a href="#41700" data-index="33">San Antonio-New Braunfels, TX </a></li>
+                                                                      <li><a href="#43300" data-index="329">Sherman-Denison, TX </a></li>
+                                                                      <li><a href="#45500" data-index="447">Texarkana, TX-AR </a></li>
+                                                                      <li><a href="#46340" data-index="199">Tyler, TX </a></li>
+                                                                      <li><a href="#47020" data-index="168">Victoria, TX </a></li>
+                                                                      <li><a href="#47380" data-index="393">Waco, TX </a></li>
+                                                                      <li><a href="#48660" data-index="90">Wichita Falls, TX </a></li>
+                                                              </ul>
+                                                      <ul id="state-UT" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#30860" data-index="134">Logan, UT-ID </a></li>
+                                                                      <li><a href="#36260" data-index="321">Ogden-Clearfield, UT </a></li>
+                                                                      <li><a href="#39340" data-index="500">Provo-Orem, UT </a></li>
+                                                                      <li><a href="#41620" data-index="216">Salt Lake City, UT </a></li>
+                                                                      <li><a href="#41100" data-index="474">St. George, UT </a></li>
+                                                              </ul>
+                                                      <ul id="state-VT" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#15540" data-index="270">Burlington-South Burlington, VT </a></li>
+                                                                      <li><a href="#17200" data-index="379">Claremont-Lebanon, NH-VT </a></li>
+                                                              </ul>
+                                                      <ul id="state-VA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#13980" data-index="418">Blacksburg-Christiansburg-Radford, VA </a></li>
+                                                                      <li><a href="#14140" data-index="121">Bluefield, WV-VA </a></li>
+                                                                      <li><a href="#16820" data-index="110">Charlottesville, VA </a></li>
+                                                                      <li><a href="#19260" data-index="366">Danville, VA </a></li>
+                                                                      <li><a href="#25500" data-index="209">Harrisonburg, VA </a></li>
+                                                                      <li><a href="#28700" data-index="94">Kingsport-Bristol-Bristol, TN-VA </a></li>
+                                                                      <li><a href="#31340" data-index="327">Lynchburg, VA </a></li>
+                                                                      <li><a href="#32300" data-index="355">Martinsville, VA </a></li>
+                                                                      <li><a href="#40060" data-index="306">Richmond, VA </a></li>
+                                                                      <li><a href="#40220" data-index="456">Roanoke, VA </a></li>
+                                                                      <li><a href="#44420" data-index="290">Staunton-Waynesboro, VA </a></li>
+                                                                      <li><a href="#47260" data-index="409">Virginia Beach-Norfolk-Newport News, VA-NC </a></li>
+                                                                      <li><a href="#47900" data-index="93">Washington-Arlington-Alexandria, DC-VA-MD-WV </a></li>
+                                                                      <li><a href="#49020" data-index="145">Winchester, VA-WV </a></li>
+                                                              </ul>
+                                                      <ul id="state-WA" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#10140" data-index="217">Aberdeen, WA </a></li>
+                                                                      <li><a href="#13380" data-index="284">Bellingham, WA </a></li>
+                                                                      <li><a href="#14740" data-index="367">Bremerton-Silverdale, WA </a></li>
+                                                                      <li><a href="#16500" data-index="150">Centralia, WA </a></li>
+                                                                      <li><a href="#28420" data-index="324">Kennewick-Richland, WA </a></li>
+                                                                      <li><a href="#30300" data-index="432">Lewiston, ID-WA </a></li>
+                                                                      <li><a href="#31020" data-index="295">Longview, WA </a></li>
+                                                                      <li><a href="#34180" data-index="353">Moses Lake, WA </a></li>
+                                                                      <li><a href="#34580" data-index="476">Mount Vernon-Anacortes, WA </a></li>
+                                                                      <li><a href="#36020" data-index="75">Oak Harbor, WA </a></li>
+                                                                      <li><a href="#36500" data-index="436">Olympia-Tumwater, WA </a></li>
+                                                                      <li><a href="#38820" data-index="405">Port Angeles, WA </a></li>
+                                                                      <li><a href="#38900" data-index="428">Portland-Vancouver-Hillsboro, OR-WA </a></li>
+                                                                      <li><a href="#42660" data-index="256">Seattle-Tacoma-Bellevue, WA </a></li>
+                                                                      <li><a href="#44060" data-index="205">Spokane-Spokane Valley, WA </a></li>
+                                                                      <li><a href="#47460" data-index="56">Walla Walla, WA </a></li>
+                                                                      <li><a href="#48300" data-index="308">Wenatchee, WA </a></li>
+                                                                      <li><a href="#49420" data-index="120">Yakima, WA </a></li>
+                                                              </ul>
+                                                      <ul id="state-WV" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#13220" data-index="91">Beckley, WV </a></li>
+                                                                      <li><a href="#14140" data-index="121">Bluefield, WV-VA </a></li>
+                                                                      <li><a href="#16620" data-index="384">Charleston, WV </a></li>
+                                                                      <li><a href="#17220" data-index="470">Clarksburg, WV </a></li>
+                                                                      <li><a href="#19060" data-index="224">Cumberland, MD-WV </a></li>
+                                                                      <li><a href="#25180" data-index="55">Hagerstown-Martinsburg, MD-WV </a></li>
+                                                                      <li><a href="#26580" data-index="188">Huntington-Ashland, WV-KY-OH </a></li>
+                                                                      <li><a href="#34060" data-index="279">Morgantown, WV </a></li>
+                                                                      <li><a href="#37620" data-index="89">Parkersburg-Vienna, WV </a></li>
+                                                                      <li><a href="#47900" data-index="93">Washington-Arlington-Alexandria, DC-VA-MD-WV </a></li>
+                                                                      <li><a href="#48260" data-index="341">Weirton-Steubenville, WV-OH </a></li>
+                                                                      <li><a href="#48540" data-index="242">Wheeling, WV-OH </a></li>
+                                                                      <li><a href="#49020" data-index="145">Winchester, VA-WV </a></li>
+                                                              </ul>
+                                                      <ul id="state-WI" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#11540" data-index="325">Appleton, WI </a></li>
+                                                                      <li><a href="#13180" data-index="310">Beaver Dam, WI </a></li>
+                                                                      <li><a href="#16980" data-index="86">Chicago-Naperville-Elgin, IL-IN-WI </a></li>
+                                                                      <li><a href="#20260" data-index="137">Duluth, MN-WI </a></li>
+                                                                      <li><a href="#20740" data-index="311">Eau Claire, WI </a></li>
+                                                                      <li><a href="#22540" data-index="491">Fond du Lac, WI </a></li>
+                                                                      <li><a href="#24580" data-index="123">Green Bay, WI </a></li>
+                                                                      <li><a href="#27500" data-index="260">Janesville-Beloit, WI </a></li>
+                                                                      <li><a href="#29100" data-index="127">La Crosse-Onalaska, WI-MN </a></li>
+                                                                      <li><a href="#31540" data-index="101">Madison, WI </a></li>
+                                                                      <li><a href="#31820" data-index="18">Manitowoc, WI </a></li>
+                                                                      <li><a href="#31940" data-index="1">Marinette, WI-MI </a></li>
+                                                                      <li><a href="#33340" data-index="499">Milwaukee-Waukesha-West Allis, WI </a></li>
+                                                                      <li><a href="#33460" data-index="119">Minneapolis-St. Paul-Bloomington, MN-WI </a></li>
+                                                                      <li><a href="#36780" data-index="406">Oshkosh-Neenah, WI </a></li>
+                                                                      <li><a href="#39540" data-index="220">Racine, WI </a></li>
+                                                                      <li><a href="#43100" data-index="349">Sheboygan, WI </a></li>
+                                                                      <li><a href="#44620" data-index="328">Stevens Point, WI </a></li>
+                                                                      <li><a href="#48020" data-index="239">Watertown-Fort Atkinson, WI </a></li>
+                                                                      <li><a href="#48140" data-index="167">Wausau, WI </a></li>
+                                                                      <li><a href="#48580" data-index="344">Whitewater-Elkhorn, WI </a></li>
+                                                                      <li><a href="#49220" data-index="111">Wisconsin Rapids-Marshfield, WI </a></li>
+                                                              </ul>
+                                                      <ul id="state-WY" class="state-dropdown" style="display: none;">
+                                                                      <li><a href="#16220" data-index="391">Casper, WY </a></li>
+                                                                      <li><a href="#16940" data-index="357">Cheyenne, WY </a></li>
+                                                              </ul>
+                                          </div>
+          </div>
+          <div id="map-card">
+              <p id="metro-area"><span class="dot capitalized"></span> <span class="name">San Jose-Sunnyvale-Santa Clara, CA</span></p>
+              <hr>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Variable</th>
+                          <th>Data</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th>Access Rate*</th>
+                          <td id="access-rate">100.0%</td>
+                      </tr>
+                      <tr>
+                          <th>Subscription Rate**</th>
+                          <td id="subscription-rate">82.0%</td>
+                      </tr>
+                      <tr>
+                          <th>Population</th>
+                          <td id="population">1,978,816</td>
+                      </tr>
+                      <tr>
+                          <th colspan="2">Households</th>
+                      </tr>
+                      <tr>
+                          <th>With Subscriptions</th>
+                          <td id="with-subscription">36,221</td>
+                      </tr>
+                      <tr>
+                          <th>Without Subscriptions</th>
+                          <td id="without-subscription">7,823</td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+  </div>
+
+  <div class="map-nav">
+      <a href="#capitalized-markets-map" class="active tooltip" data-filter="capitalized" data-color="#7ED321" title="Communities that have seized upon the broadband opportunity, leading the charge through infrastructure development and commitment to lowering barriers, while ensuring the members of the community understand the immense benefits provided by this innovative technology.">
+          <p class="market"><i class="button button-green"></i> Capitalized Markets</p>
+          <hr>
+          <p class="stat"><img src="dist/icon-markets.png" srcset="dist/icon-markets.png 1x, dist/icon-markets@2x.png 2x"> 188 Markets</p>
+          <p class="stat"><img src="dist/icon-people.png" srcset="dist/icon-people.png 1x, dist/icon-people@2x.png 2x"> 214,223,156 people</p>
+          <div class="graph-container"><div class="graph-bar green" style="width:67.3%"></div></div>
+      </a>
+      <a href="#opportunity-markets-map" class="active tooltip" data-filter="opportunity" data-color="#F8E71C" title="Communities positioned to unlock greater potential through education and awareness efforts that empower residents to capitalize on the opportunity provided by the existing broadband infrastructure.">
+          <p class="market"><i class="button button-yellow"></i> Opportunity Markets</p>
+          <hr>
+          <p class="stat"><img src="dist/icon-markets.png" srcset="dist/icon-markets.png 1x, dist/icon-markets@2x.png 2x"> 68 Markets</p>
+          <p class="stat"><img src="dist/icon-people.png" srcset="dist/icon-people.png 1x, dist/icon-people@2x.png 2x"> 20,983,517 people</p>
+          <div class="graph-container"><div class="graph-bar yellow" style="width:7.6%"></div></div>
+      </a>
+      <a href="#growth-markets-map" class="active tooltip" data-filter="growth" data-color="#DC394D" title="Communities in which residents are hungry to capitalize on infrastructure investments that will enable them to fulfil the internet-enabled potential they already know exists.">
+          <p class="market"><i class="button button-red"></i> Growth Markets</p>
+          <hr>
+          <p class="stat"><img src="dist/icon-markets.png" srcset="dist/icon-markets.png 1x, dist/icon-markets@2x.png 2x"> 68 Markets</p>
+          <p class="stat"><img src="dist/icon-people.png" srcset="dist/icon-people.png 1x, dist/icon-people@2x.png 2x"> 20,024,856 people</p>
+          <div class="graph-container"><div class="graph-bar red" style="width:10%"></div></div>
+      </a>
+      <a href="#investment-markets-map" class="active tooltip" data-filter="investment" data-color="#BD10E0" title="Communities representing the final hurdle to reaching a fully connected nation—where infrastructure investments should be paired with educational outreach and awareness efforts to ensure residents have access to today’s most important technology.">
+          <p class="market"><i class="button button-magenta"></i> Investment Markets</p>
+          <hr>
+          <p class="stat"><img src="dist/icon-markets.png" srcset="dist/icon-markets.png 1x, dist/icon-markets@2x.png 2x"> 187 Markets</p>
+          <p class="stat"><img src="dist/icon-people.png" srcset="dist/icon-people.png 1x, dist/icon-people@2x.png 2x"> 33,394,352 people</p>
+          <div class="graph-container"><div class="graph-bar magenta" style="width:15%"></div></div>
+      </a>
+      <div class="footnotes">
+          <p class="footnote">*Access Rate is the percent of households living in Census Tracts that meet the FCC minimum threshold for broadband.</p>
+          <p class="footnote">**Subscription Rate is the percent of households that indicated having a broadband subscription in the Census Bureau's annual American Community Survey.</p>
+          <p class="footnote"><a href="#">View methodology and source data</a></p>
+      </div>
+  </div>
+</section>
+
 <script type="text/javascript">
 
 /*  This visualization was made possible by modifying code provided by:
@@ -76,13 +900,13 @@ var path = d3.geo.path()               // path generator that will convert GeoJS
 
 
 //Create SVG element and append map to the SVG
-var svg = d3.select("body")
+var svg = d3.select("#map")
 			.append("svg")
 			.attr("width", width)
 			.attr("height", height);
 
 // Append Div for tooltip to SVG
-var div = d3.select("body")
+var div = d3.select("#map")
 		    .append("div")
     		.attr("class", "tooltip")
     		.style("opacity", 0);
@@ -96,61 +920,13 @@ d3.json("us-states.json", function(json) {
     .enter()
     .append("path")
     .attr("d", path)
-    .style("stroke", "rgb(213,222,217)")
-    //.style("stroke-width", "1")
-    .style("fill", function(d) {
-       return "rgb(213,222,217)";
-     });
-
+    .style("stroke", "rgb(255,255,255)")
+    .style("stroke-width", "0.2")
+    .style("fill", "rgb(173,193,200)");
 });
 
 
-// load metro data to display on a map
-d3.json("dotMapData_v4.json", function(pointData) {
-
-  // make the geoid the class
-  svg.selectAll("circle")
-  	.data(pointData.features)
-  	.enter()
-  	.append("circle")
-  	.attr("cx", function(d, i) {
-      var lon = d.geometry.coordinates[0];
-      var lat = d.geometry.coordinates[1];
-      var coord = projection([lon, lat]);
-      return coord[0];
-  	})
-  	.attr("cy", function(d, i) {
-      var lon = d.geometry.coordinates[0];
-      var lat = d.geometry.coordinates[1];
-      var coord = projection([lon, lat]);
-  		return coord[1];
-  	})
-  	.attr("r", 3)
-  	.style("fill", "rgb(217,91,67)")
-  	.style("opacity", 0.95)
-
-  	// Modification of custom tooltip code provided by Malcolm Maclean, "D3 Tips and Tricks"
-  	// http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
-  	.on("mouseover", function(d) {
-      	div.transition()
-        	   .duration(200)
-             .style("opacity", .95);
-             div.text(d.properties.NAME)
-             .style("left", (d3.event.pageX) + "px")
-             .style("top", (d3.event.pageY - 28) + "px");
-  	})
-
-    // fade out tooltip on mouse out
-    .on("mouseout", function(d) {
-        div.transition()
-           .duration(500)
-           .style("opacity", 0);
-    });
-});
-
-
-
-// load metro info to display in the card
+// load metro info to a dictionary (to later display in card)
 d3.json("metroArea_with_data.json", function(metroData) {
 
   // set of features to loop through
@@ -169,8 +945,79 @@ d3.json("metroArea_with_data.json", function(metroData) {
     geoDict[geoid] = propData;
   }
 
-  //console.log(geoDict);
+  console.log(geoDict);
 });
+
+
+
+
+// load metro data to display on a map
+d3.json("dotMapData_v4.json", function(pointData) {
+
+  // make the geoid the class
+  svg.selectAll("circle")
+  	.data(pointData.features)
+  	.enter()
+  	.append("circle")
+  	.attr("cx", function(d) {
+      var lon = d.geometry.coordinates[0];
+      var lat = d.geometry.coordinates[1];
+      var coord = projection([lon, lat]);
+      return coord[0];
+  	})
+  	.attr("cy", function(d) {
+      var lon = d.geometry.coordinates[0];
+      var lat = d.geometry.coordinates[1];
+      var coord = projection([lon, lat]);
+  		return coord[1];
+  	})
+  	.attr("r", 3)
+    .attr('class', function(d) {
+      var geoid = d.properties.GEOID;
+      var category = d.properties.category;
+      var state = d.properties.state;
+      var state0 = d.properties.state0;
+      var classes = geoid + " " + category + " " + state + " " + state0;
+      return classes;
+    })
+  	.style("fill", function(d) {
+      var category = d.properties.category;
+      if (category == 'capitalized') {
+        return "rgb(230,27,80)";
+      }
+      else if (category == 'opportunity') {
+        return "rgb(252,209,71)";
+      }
+      else if (category == 'growth') {
+        return "rgb(31,31,149)";
+      }
+      else if (category == 'investment') {
+        return "rgb(131,71,157)";
+      }
+      else {
+        return "rgb(0,0,0)";
+      }
+    })
+
+  	// Modification of custom tooltip code provided by Malcolm Maclean, "D3 Tips and Tricks"
+  	// http://www.d3noob.org/2013/01/adding-tooltips-to-d3js-graph.html
+  	.on("mouseover", function(d) {
+      	div.transition()
+        	   .duration(200)
+             .style("opacity", .95);
+             div.text(geoDict[d.properties.GEOID].NAME)
+             .style("left", (d3.event.pageX) + "px")
+             .style("top", (d3.event.pageY - 23) + "px");
+  	})
+
+    // fade out tooltip on mouse out
+    .on("mouseout", function(d) {
+        div.transition()
+           .duration(500)
+           .style("opacity", 0);
+    });
+});
+
 
 
 </script>
