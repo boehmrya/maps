@@ -1,0 +1,404 @@
+Marinette, WI-MI Micro Area
+WI-MI
+-87.630640, 45.099940
+
+Cookeville, TN Micro Area
+TN
+-85.501010, 36.156590
+
+Lumberton, NC Micro Area
+NC
+-79.004530, 34.617840
+
+Lebanon, PA Metro Area
+PA
+-76.426340, 40.339790
+
+Owosso, MI Micro Area
+MI
+-84.170630, 42.998480
+
+Adrian, MI Micro Area
+MI
+-84.039818, 41.895302
+
+Manitowoc, WI Micro Area
+WI
+-87.657791, 44.088840
+
+Ashtabula, OH Micro Area
+OH
+-80.786640, 41.868730
+
+Anniston-Oxford-Jacksonville, AL Metro Area
+AL
+-85.851390, 33.649910
+
+Marion, OH Micro Area
+OH
+-83.131840, 40.588540
+
+Naples-Immokalee-Marco Island, FL Metro Area
+FL
+-81.715850, 25.939250
+
+Mount Airy, NC Micro Area
+NC
+-80.605390, 36.499960
+
+Hermiston-Pendleton, OR Micro Area
+OR
+-119.290210, 45.841450
+
+Sandusky, OH Micro Area
+OH
+-82.710960, 41.454930
+
+Zanesville, OH Micro Area
+OH
+-82.003970, 39.940000
+
+Torrington, CT Micro Area
+CT
+-73.101570, 41.812190
+
+Hot Springs, AR Metro Area
+AR
+-93.055660, 34.502780
+
+Salem, OH Micro Area
+OH
+-80.856700, 40.900990
+
+Gallup, NM Micro Area
+NM
+-108.742584, 35.528076
+
+LaGrange, GA Micro Area
+GA
+-85.029640, 33.038740
+
+Keene, NH Micro Area
+NH
+-72.279213, 42.934330
+
+Sebring, FL Metro Area
+FL
+-81.444830, 27.497980
+
+Walla Walla, WA Metro Area
+WA
+-118.333640, 46.065550
+
+Punta Gorda, FL Metro Area
+FL
+Charleston-Mattoon, IL Micro Area
+IL
+California-Lexington Park, MD Metro Area
+MD
+Gadsden, AL Metro Area
+AL
+Clearlake, CA Micro Area
+CA
+Albertville, AL Micro Area
+AL
+New Philadelphia-Dover, OH Micro Area
+OH
+Brainerd, MN Micro Area
+MN
+Oak Harbor, WA Micro Area
+WA
+Greeneville, TN Micro Area
+TN
+Coos Bay, OR Micro Area
+OR
+Opelousas, LA Micro Area
+LA
+Parkersburg-Vienna, WV Metro Area
+WV
+Beckley, WV Metro Area
+WV
+Indiana, PA Micro Area
+PA
+Meadville, PA Micro Area
+PA
+Wisconsin Rapids-Marshfield, WI Micro Area
+WI
+Greenfield Town, MA Micro Area
+MA
+Niles-Benton Harbor, MI Metro Area
+MI
+Elizabethtown-Fort Knox, KY Metro Area
+KY
+Russellville, AR Micro Area
+AR
+Bluefield, WV-VA Micro Area
+WV-VA
+Jackson, MI Metro Area
+MI
+Palatka, FL Micro Area
+FL
+Faribault-Northfield, MN Micro Area
+MN
+Marquette, MI Micro Area
+MI
+Gainesville, GA Metro Area
+GA
+Orangeburg, SC Micro Area
+SC
+Winchester, VA-WV Metro Area
+VA-WV
+Statesboro, GA Micro Area
+GA
+Centralia, WA Micro Area
+WA
+Ithaca, NY Metro Area
+NY
+Corning, NY Micro Area
+NY
+New Castle, PA Micro Area
+PA
+Michigan City-La Porte, IN Metro Area
+IN
+Show Low, AZ Micro Area
+AZ
+East Stroudsburg, PA Metro Area
+PA
+DuBois, PA Micro Area
+PA
+Lufkin, TX Micro Area
+TX
+Cullman, AL Micro Area
+AL
+Dunn, NC Micro Area
+NC
+Danville, IL Metro Area
+IL
+Mount Pleasant, MI Micro Area
+MI
+Bloomsburg-Berwick, PA Metro Area
+PA
+Monroe, MI Metro Area
+MI
+Somerset, PA Micro Area
+PA
+Athens, OH Micro Area
+OH
+Kankakee, IL Metro Area
+IL
+Bangor, ME Metro Area
+ME
+Tullahoma-Manchester, TN Micro Area
+TN
+Augusta-Waterville, ME Micro Area
+ME
+Myrtle Beach-Conway-North Myrtle Beach, SC-NC Metro Area
+SC-NC
+Elizabeth City, NC Micro Area
+NC
+Greenwood, SC Micro Area
+SC
+Homosassa Springs, FL Metro Area
+FL
+Aberdeen, WA Micro Area
+WA
+Chillicothe, OH Micro Area
+OH
+Cumberland, MD-WV Metro Area
+MD-WV
+Elmira, NY Metro Area
+NY
+Marion, IN Micro Area
+IN
+Kalispell, MT Micro Area
+MT
+Auburn, NY Micro Area
+NY
+Richmond, IN Micro Area
+IN
+North Wilkesboro, NC Micro Area
+NC
+Watertown-Fort Atkinson, WI Micro Area
+WI
+Rome, GA Metro Area
+GA
+Wheeling, WV-OH Metro Area
+WV-OH
+Sebastian-Vero Beach, FL Metro Area
+FL
+Morristown, TN Metro Area
+TN
+Pottsville, PA Micro Area
+PA
+Fort Payne, AL Micro Area
+AL
+Morehead City, NC Micro Area
+NC
+London, KY Micro Area
+KY
+Tupelo, MS Micro Area
+MS
+Richmond-Berea, KY Micro Area
+KY
+Farmington, MO Micro Area
+MO
+Wooster, OH Micro Area
+OH
+Roanoke Rapids, NC Micro Area
+NC
+Branson, MO Micro Area
+MO
+Kingston, NY Metro Area
+NY
+Morgantown, WV Metro Area
+WV
+Truckee-Grass Valley, CA Micro Area
+CA
+Staunton-Waynesboro, VA Metro Area
+VA
+Longview, WA Metro Area
+WA
+Seneca, SC Micro Area
+SC
+Holland, MI Micro Area
+MI
+Glenwood Springs, CO Micro Area
+CO
+Forest City, NC Micro Area
+NC
+Crestview-Fort Walton Beach-Destin, FL Metro Area
+FL
+Wenatchee, WA Metro Area
+WA
+Grants Pass, OR Metro Area
+OR
+Beaver Dam, WI Micro Area
+WI
+Athens, TX Micro Area
+TX
+Johnstown, PA Metro Area
+PA
+Stevens Point, WI Micro Area
+WI
+Ottawa-Peru, IL Micro Area
+IL
+Paducah, KY-IL Micro Area
+KY-IL
+The Villages, FL Metro Area
+FL
+Ocean City, NJ Metro Area
+NJ
+Weirton-Steubenville, WV-OH Metro Area
+WV-OH
+Whitewater-Elkhorn, WI Micro Area
+WI
+Daphne-Fairhope-Foley, AL Metro Area
+AL
+Moses Lake, WA Micro Area
+WA
+Martinsville, VA Micro Area
+VA
+Shelby, NC Micro Area
+NC
+Gettysburg, PA Metro Area
+PA
+Hinesville, GA Metro Area
+GA
+Talladega-Sylacauga, AL Micro Area
+AL
+Eureka-Arcata-Fortuna, CA Micro Area
+CA
+Key West, FL Micro Area
+FL
+Houma-Thibodaux, LA Metro Area
+LA
+Claremont-Lebanon, NH-VT Micro Area
+NH-VT
+Salisbury, MD-DE Metro Area
+MD-DE
+Shawnee, OK Micro Area
+OK
+Jamestown-Dunkirk-Fredonia, NY Micro Area
+NY
+Watertown-Fort Drum, NY Metro Area
+NY
+Chambersburg-Waynesboro, PA Metro Area
+PA
+Frankfort, KY Micro Area
+KY
+Pinehurst-Southern Pines, NC Micro Area
+NC
+Warsaw, IN Micro Area
+IN
+Port Angeles, WA Micro Area
+WA
+Lewiston-Auburn, ME Metro Area
+ME
+Goldsboro, NC Metro Area
+NC
+Olean, NY Micro Area
+NY
+Laurel, MS Micro Area
+MS
+Ogdensburg-Massena, NY Micro Area
+NY
+Plattsburgh, NY Micro Area
+NY
+Portsmouth, OH Micro Area
+OH
+Bay City, MI Metro Area
+MI
+Klamath Falls, OR Micro Area
+OR
+Williamsport, PA Metro Area
+PA
+Lake City, FL Micro Area
+FL
+Nacogdoches, TX Micro Area
+TX
+Lewiston, ID-WA Metro Area
+ID-WA
+New Bern, NC Metro Area
+NC
+Sevierville, TN Micro Area
+TN
+Brunswick, GA Metro Area
+GA
+Hobbs, NM Micro Area
+NM
+Searcy, AR Micro Area
+AR
+Ukiah, CA Micro Area
+CA
+Alamogordo, NM Micro Area
+NM
+Hammond, LA Metro Area
+LA
+Helena, MT Micro Area
+MT
+Clarksburg, WV Micro Area
+WV
+Marshall, TX Micro Area
+TX
+Mount Vernon-Anacortes, WA Metro Area
+WA
+Carbondale-Marion, IL Metro Area
+IL
+Traverse City, MI Micro Area
+MI
+Glens Falls, NY Metro Area
+NY
+Roseburg, OR Micro Area
+OR
+Dalton, GA Metro Area
+GA
+Sunbury, PA Micro Area
+PA
+Hilo, HI
+HI
+Kahului-Wailuku-Lahaina, HI
+HI
+Kapaa, HI
+HI
+Fairbanks, AK
+AK

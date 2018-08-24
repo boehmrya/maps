@@ -1,0 +1,36 @@
+Sebring, FL
+(27.4957453, -81.4410425)
+
+Walla Walla, WA
+(46.0650381, -118.3302476)
+
+Punta Gorda, FL
+(26.9297836, -82.0453664)
+
+
+
+[u'Anniston-Oxford-Jacksonville, AL',
+u'Naples-Immokalee-Marco Island, FL',
+u'Hermiston-Pendleton, OR',
+u'New Philadelphia-Dover, OH',
+u'Wisconsin Rapids-Marshfield, WI',
+u'Elizabethtown-Fort Knox, KY',
+u'Faribault-Northfield, MN',
+u'Michigan City-La Porte, IN',
+u'Bloomsburg-Berwick, PA',
+u'Augusta-Waterville, ME',
+u'Myrtle Beach-Conway-North Myrtle Beach, SC-NC',
+u'Watertown-Fort Atkinson, WI',
+u'Sebastian-Vero Beach, FL',
+u'Truckee-Grass Valley, CA',
+u'Staunton-Waynesboro, VA',
+u'Crestview-Fort Walton Beach-Destin, FL',
+u'Whitewater-Elkhorn, WI',
+u'Daphne-Fairhope-Foley, AL',
+u'Eureka-Arcata-Fortuna, CA',
+u'Claremont-Lebanon, NH-VT',
+u'Jamestown-Dunkirk-Fredonia, NY',
+u'Chambersburg-Waynesboro, PA',
+u'Ogdensburg-Massena, NY',
+u'Mount Vernon-Anacortes, WA',
+u'Kahului-Wailuku-Lahaina, HI']
